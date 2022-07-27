@@ -2,5 +2,17 @@
   "/api": {
     "target": "http://localhost:3333",
     "secure": false
+  },
+  "/home": {
+    "target": "http://localhost:4200",
+    "secure": false
+  },
+  "/creator/**": {
+    "target": "http://localhost:4300",
+    "secure": false
+  },
+  "/viewer": {
+    "target": "http://localhost:4400",
+    "secure": false
   }
 }

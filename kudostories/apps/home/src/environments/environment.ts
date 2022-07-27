@@ -4,6 +4,8 @@
 
 export const environment = {
   production: false,
+  creatorUrl: 'http://localhost:4300',
+  viewerUrl: 'http://localhost:4400',
 };
 
 /*

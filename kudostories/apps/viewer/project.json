@@ -60,6 +60,9 @@
     "serve": {
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
+        "options": {
+          "port": 4400
+        },
         "production": {
           "browserTarget": "viewer:build:production"
         },

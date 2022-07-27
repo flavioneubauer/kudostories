@@ -1,4 +1,5 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { ContainerModel } from './../models/container-model';
+import { ChangeDetectionStrategy, Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'menu',
@@ -7,7 +8,15 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MenuComponent implements OnInit {
+
+  @Input() model : ContainerModel = {creatorUrl : '', viewerUrl : ''};
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  navigateTo(app: string){
+    console.log(app, this.model);
+    window.location.href = app == 'creator'? this.model.creatorUrl: this.model.viewerUrl;
+  }
 }

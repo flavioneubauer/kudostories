@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { ContainerModel } from './../models/container-model';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'container-sobre',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./container-sobre.component.less'],
 })
 export class ContainerSobreComponent implements OnInit {
+
+  @Input() model : ContainerModel = {creatorUrl : '', viewerUrl : ''};
+
   constructor() {}
 
   ngOnInit(): void {}
