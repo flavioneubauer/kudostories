@@ -1,3 +1,5 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormularioModule } from './formulario/formulario.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -9,6 +11,8 @@ import { RouterModule } from '@angular/router';
   declarations: [AppComponent, NxWelcomeComponent],
   imports: [
     BrowserModule,
+    FormularioModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' }),
   ],
   providers: [],

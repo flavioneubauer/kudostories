@@ -1,0 +1,12 @@
+<form class="flex-row" [formGroup]="form">
+  <mat-form-field class="w-full text-white" appearance="fill">
+    <mat-label>Quem vai receber? </mat-label>
+    <input matInput placeholder="Fulano de tal" formControlName="destinatario">
+  </mat-form-field>
+
+  <mat-form-field class="w-full text-white" appearance="fill">
+    <mat-label>Quem está enviando ?</mat-label>
+    <input matInput placeholder="Meu nome é ..." formControlName="remetente">
+  </mat-form-field>
+
+</form>
